@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F79489;
+}
+.navbar {
+    background-color: #F9BEB7; /* Warna latar belakang pink muda */
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff; /* Warna teks pink yang lebih gelap */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px; /* Sudut yang bulat untuk tautan */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+    margin: 0 10px; /* Jarak antar tautan */
+    
+}
+.navbar a:hover {
+    background-color: #F79489; /* Perubahan warna saat di-hover */
+}
+.navbar span {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.Contact{
+    float: right;
+}
+
+p{
+    text-align: justify;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom dengan lebar yang sama */
+    gap: 20px; /* Jarak antar kotak */
+    margin: 50px;
+}
+
+.portfolio-box {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Tengahkan teks di dalam kotak */
+}
+
+.portfolio-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: justify; /* Ratakan teks */
+}
+
+.portfolio-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F79489;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-box a:hover {
+    background-color: #F9BEB7;
+}
+
+/* Responsif: Ketika layar kurang dari 600px, kotak akan tumpuk di atas satu sama lain */
+@media screen and (max-width: 600px) {
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Satu kolom */
+    }
+}

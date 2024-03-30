@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F79489;
+}
+.navbar {
+    background-color: #F9BEB7; /* Warna latar belakang pink muda */
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff; /* Warna teks pink yang lebih gelap */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px; /* Sudut yang bulat untuk tautan */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+    margin: 0 10px; /* Jarak antar tautan */
+    
+}
+.navbar a:hover {
+    background-color: #F79489; /* Perubahan warna saat di-hover */
+}
+.navbar span {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.Contact{
+    float: right;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.profile-photo {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 10px;
+    height: 600px;
+}
+
+/* Penyesuaian ukuran dan margin */
+.intro-text-card {
+    width: 50%;
+    height: auto;
+    margin: 20px; /* Equal margin on all sides */
+    padding: 40px;
+    background-color: #F9BEB7;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.intro-text-card h1 {
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.intro-text-card p {
+    font-size: 24px;
+    text-align: justify;
+}
+
+/* Penyesuaian teks */
+
+/* Penyesuaian responsif */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Tumpuk elemen secara vertikal pada layar yang lebih kecil */
+    }
+
+    .intro-text-card {
+        width: 90%; /* Lebar card lebih kecil pada layar yang lebih kecil */
+    }
+}
